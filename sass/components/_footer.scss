@@ -40,6 +40,16 @@
   margin-right: 70px;
 }
 
+.cta {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-txt-color);
+  margin-bottom: 20px;
+}
+
 .socials {
   display: flex;
   justify-content: space-between;
@@ -78,6 +88,36 @@
 
 .subscription {
   display: flex;
+  &__icon {
+    fill: var(--primary-bg-color);
+    margin-right: 28px;
+    margin-left: 24px;
+  }
+
+  &__button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--brand-color);
+    border-radius: 4px;
+    border-style: none;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--third-txt-color);
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
 
   &__input {
     width: 358px;
@@ -101,46 +141,5 @@
     &:hover {
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     }
-
-    &__button {
-      width: 200px;
-      height: 50px;
-      background-color: var(--brand-color);
-      border-radius: 4px;
-      border-style: none;
-      cursor: pointer;
-
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.87;
-      text-align: center;
-      letter-spacing: 0.06em;
-      color: var(--third-txt-color);
-      &:hover,
-      &:focus,
-      &:active {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      }
-    }
-    &__icon {
-      fill: var(--primary-bg-color);
-      margin-right: 28px;
-      margin-left: 24px;
-    }
-  }
-
-  .cta {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1 14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--third-txt-color);
-    margin-bottom: 20px;
   }
 }

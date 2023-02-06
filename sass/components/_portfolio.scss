@@ -4,7 +4,7 @@
   justify-content: center;
   gap: 8px;
 
-  &_button {
+  &__button {
     font-family: "Roboto";
     font-weight: 500;
     font-size: 16px;
@@ -73,6 +73,13 @@
     letter-spacing: 0.03em;
     color: var(--secondary-txt-color);
     padding: 0 24px 20px 24px;
+  }
+
+  .overlay {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
   }
 
   .overlay__txt {
